@@ -2,6 +2,8 @@
 
 Aggregate Github commits by author and time.
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 ## using
 
 usage: aggregateGithubCommits.py [-h] [-r REPO] [-a AUTHOR]
@@ -52,3 +54,9 @@ Plase set your Github Token
 
 Now, Period is setted between 1 May 2020 to 30 June 2020. Those are hard coding in this source code.
 If you want to change period, change source code. 
+
+## License
+
+CC BY-NC-SA 4.0
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
