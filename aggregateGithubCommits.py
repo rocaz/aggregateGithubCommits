@@ -15,7 +15,7 @@ import os
 from github import Github
 
 p = argparse.ArgumentParser()
-p.add_argument("-r","--repo", default="Covid-19Radar/Covid19Radar")
+p.add_argument("-r","--repo", default="github/covid-19-repo-data")
 p.add_argument("-a","--author", default=None)
 
 github_token=os.environ['GITHUBTOKEN']
