@@ -42,22 +42,25 @@ def main(repo="Covid-19Radar/Covid19Radar", author=None):
     ar = c.author.login if c.author is not None else c.commit.author.name
     dt = c.commit.author.date.replace(tzinfo=timezone('UTC')).astimezone(timezone('Asia/Tokyo'))
     hr = dt.strftime("%H")
+    pd = None
     for p in periods:
-      if dt <= p["until"] and dt >= p["since"]: 
+      if dt <= p["until"] and dt >= p["since"]:
         pd = "{0:%Y-%m-%d} - {1:%Y-%m-%d}".format(p["since"], p["until"])
-    if ar in commit_count:
-      if pd in commit_count[ar]:
-        if hr in commit_count[ar][pd]:
-          commit_count[ar][pd][hr] += 1
+        break
+    if pd is not None:
+      if ar in commit_count:
+        if pd in commit_count[ar]:
+          if hr in commit_count[ar][pd]:
+            commit_count[ar][pd][hr] += 1
+          else:
+            commit_count[ar][pd][hr] = 1
         else:
+          commit_count[ar][pd] = {}
           commit_count[ar][pd][hr] = 1
       else:
+        commit_count[ar] = {}
         commit_count[ar][pd] = {}
         commit_count[ar][pd][hr] = 1
-    else:
-      commit_count[ar] = {}
-      commit_count[ar][pd] = {}
-      commit_count[ar][pd][hr] = 1
 
   print("Repository: {0}".format(r.git_url))
   print("Total:      {0}".format(commits.totalCount))
