@@ -33,6 +33,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --cov=. -v -s --cov-report=html
+      env:
+        GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
