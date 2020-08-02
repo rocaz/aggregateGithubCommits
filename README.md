@@ -6,6 +6,8 @@ Aggregate Github commit count by author and time.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+![GitHub Actions](https://github.com/rocaz/aggregateGithubCommits/workflows/GitHub%20Actions/badge.svg) [![codecov](https://codecov.io/gh/rocaz/aggregateGithubCommits/branch/master/graph/badge.svg)](https://codecov.io/gh/rocaz/aggregateGithubCommits)
+
 ## Requirement
 
 - Python 3.7+
