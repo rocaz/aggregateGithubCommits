@@ -20,7 +20,7 @@ import os
 import pandas as pd
 from github import Github, GithubException
 
-version_str = "2(20200724)"
+version_str = "2(20200802)"
 
 class Error(Exception):
   pass
