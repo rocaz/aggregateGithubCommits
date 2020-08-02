@@ -2,6 +2,8 @@
 
 Aggregate Github commit count by author and time.
 
+[![Python: 3.7+](https://img.shields.io/badge/Python-3.7+-4584b6.svg?style=popout&logo=python)](https://www.python.org/)
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## Requirement
@@ -9,7 +11,7 @@ Aggregate Github commit count by author and time.
 - Python 3.7+
 - Your own GitHub account
 
-## using
+## Usage
 
 usage: aggregateGithubCommits.py [-h] -r|--repo REPO [-a|--author AUTHOR] [-s|since SINCE]
                                  [-u|until UNTIL] [-p|--period {h,d,m,w}] [-t|--term TERM]
