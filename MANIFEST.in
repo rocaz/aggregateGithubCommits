@@ -1,4 +1,2 @@
-include README.md
-include README.rst
-include LICENSE.md
-include LICENSE.rst
+include *.md
+include *.rst
