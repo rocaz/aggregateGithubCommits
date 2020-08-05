@@ -13,6 +13,12 @@ Aggregate Github commit count by author and time.
 - Python 3.7+
 - Your own GitHub account
 
+## Install
+
+```
+pip install git+https://github.com/rocaz/aggregateGithubCommits
+```
+
 ## Usage
 
 usage: aggregateGithubCommits.py [-h] -r|--repo REPO [-a|--author AUTHOR] [-s|since SINCE]
