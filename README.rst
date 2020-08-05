@@ -15,11 +15,18 @@ Requirement
 -  Python 3.7+
 -  Your own GitHub account
 
+Install
+-------
+
+::
+
+   pip install git+https://github.com/rocaz/aggregateGithubCommits
+
 Usage
 -----
 
-usage: aggregateGithubCommits.py [-h] -r|–repo REPO [-a|–author AUTHOR]
-[-s|since SINCE] [-u|until UNTIL] [-p|–period {h,d,m,w}] [-t|–term TERM]
+aggregateGithubCommits [-h] -r|–repo REPO [-a|–author AUTHOR] [-s|since
+SINCE] [-u|until UNTIL] [-p|–period {h,d,m,w}] [-t|–term TERM]
 [-f|–format {text,json,csv}] [-v]
 
 -h, –help: show this help message and exit

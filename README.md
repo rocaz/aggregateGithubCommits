@@ -21,7 +21,7 @@ pip install git+https://github.com/rocaz/aggregateGithubCommits
 
 ## Usage
 
-usage: aggregateGithubCommits.py [-h] -r|--repo REPO [-a|--author AUTHOR] [-s|since SINCE]
+aggregateGithubCommits [-h] -r|--repo REPO [-a|--author AUTHOR] [-s|since SINCE]
                                  [-u|until UNTIL] [-p|--period {h,d,m,w}] [-t|--term TERM]
                                  [-f|--format {text,json,csv}] [-v]
 
