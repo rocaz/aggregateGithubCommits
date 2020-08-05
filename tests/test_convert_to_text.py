@@ -5,7 +5,7 @@ import pytest
 import copy
 from github import Github, PaginatedList
 
-from aggregateGithubCommits import *
+from aggregateGithubCommits.aggregateGithubCommits import *
 
 
 class TestConvertToText(object):

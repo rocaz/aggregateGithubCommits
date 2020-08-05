@@ -20,7 +20,10 @@ import os
 import pandas as pd
 from github import Github, GithubException
 
-version_str = "2(20200802)"
+import aggregateGithubCommits
+
+__version__ = '3.20200806'
+
 
 class Error(Exception):
   pass
@@ -58,7 +61,7 @@ def check_args(params):
   parser.add_argument("-p", "--period", choices=("h","d","m","w"), default="h", help="Aggregating period, default is 'h'. 'h': per hour, 'd': per day, 'm': per month, 'w': per day of week")
   parser.add_argument("-t", "--term", default=None, help="Aggregating term from until, default is '3m'. '3m' means '3months', '100d' means '100days'")
   parser.add_argument("-f", "--format", choices=("text","json","csv"), default="text", dest="format_type", help="Output format type, default is 'text'. ")
-  parser.add_argument("-v", "--version", action="version", version=version_str)
+  parser.add_argument("-v", "--version", action="version", version=__version__)
 
   args = parser.parse_args(params)
 
@@ -259,8 +262,7 @@ def convert_to_csv(dataframe):
   return csv_buf.getvalue()
  
 
-if __name__ == '__main__':
-
+def main():
   try:
     github_token, args = check_args(sys.argv[1:])
     repo = args.repo
@@ -301,3 +303,7 @@ if __name__ == '__main__':
     tb = sys.exc_info()[2]
     print(e.with_traceback(tb))
     sys.exit(1)
+
+if __name__ == '__main__':
+  main()
+  

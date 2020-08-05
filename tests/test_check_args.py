@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timedelta, date
 from dateutil.relativedelta import relativedelta
 
-from aggregateGithubCommits import *
+from aggregateGithubCommits.aggregateGithubCommits import *
 
 
 class TestCheckArgs(object):

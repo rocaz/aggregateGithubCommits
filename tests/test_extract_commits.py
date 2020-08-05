@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timedelta, date
 from github import Github, PaginatedList
 
-from aggregateGithubCommits import *
+from aggregateGithubCommits.aggregateGithubCommits import *
 
 
 class TestExtractCommits(object):

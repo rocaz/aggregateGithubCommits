@@ -5,7 +5,7 @@ import pytest
 import os
 from datetime import datetime, timedelta, date
 
-from aggregateGithubCommits import *
+from aggregateGithubCommits.aggregateGithubCommits import *
 
 
 class TestParseArgs(object):
