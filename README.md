@@ -2,7 +2,7 @@
 
 Aggregate Github commit count by author and time.
 
-[![Python: 3.7+](https://img.shields.io/badge/Python-3.7+-4584b6.svg?style=popout&logo=python)](https://www.python.org/)
+[![Python: 3.7+](https://img.shields.io/badge/Python-3.7+-4584b6.svg?style=popout&logo=python)](https://www.python.org/) ![PyPI](https://img.shields.io/pypi/v/aggregateGithubCommits)
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -14,6 +14,12 @@ Aggregate Github commit count by author and time.
 - Your own GitHub account
 
 ## Install
+
+```
+pip install aggregateGithubCommits
+```
+
+or
 
 ```
 pip install git+https://github.com/rocaz/aggregateGithubCommits

@@ -3,7 +3,7 @@ aggregateGithubCommits
 
 Aggregate Github commit count by author and time.
 
-|Python: 3.7+|
+|Python: 3.7+| |PyPI|
 
 |License: CC BY-NC-SA 4.0|
 
@@ -17,6 +17,12 @@ Requirement
 
 Install
 -------
+
+::
+
+   pip install aggregateGithubCommits
+
+or
 
 ::
 
@@ -140,6 +146,7 @@ non-commercial use only.
 
 .. |Python: 3.7+| image:: https://img.shields.io/badge/Python-3.7+-4584b6.svg?style=popout&logo=python
    :target: https://www.python.org/
+.. |PyPI| image:: https://img.shields.io/pypi/v/aggregateGithubCommits
 .. |License: CC BY-NC-SA 4.0| image:: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
    :target: https://creativecommons.org/licenses/by-nc-sa/4.0/
 .. |GitHub Actions| image:: https://github.com/rocaz/aggregateGithubCommits/workflows/GitHub%20Actions/badge.svg
